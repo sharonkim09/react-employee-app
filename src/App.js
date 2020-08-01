@@ -35,7 +35,9 @@ class App extends Component {
           image={employee.picture.thumbnail} 
           firstName={employee.name.first}
           lastName={employee.name.last}
-          phoneNumber={employee.phone}/>
+          phoneNumber={employee.phone}
+          email={employee.email}
+          dob={employee.dob.date}/>
         ))}
       </>
     );
