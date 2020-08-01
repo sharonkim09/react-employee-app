@@ -9,6 +9,7 @@ class App extends Component {
   state = {
     search: "",
     employees: [],
+    result:[]
   };
 
   // When this component mounts, search the RandomUserGenerator API for pictures of kittens
@@ -23,11 +24,20 @@ class App extends Component {
       });
   }
 
+  handleInputChange = event => {
+this.setState({
+  search:event.target.value
+})
+  }
+
   render() {
     return (
       <>
         <Heading />
-        <SearchForm />
+        <SearchForm 
+        value={this.state.search}
+       handleInputChange={this.handleInputChange}
+       />
         <ContentHead />
         {this.state.employees.map((employee, id) => (
           <EmployeeCard 
