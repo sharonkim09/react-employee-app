@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import ContentHead from "./components/ContentHead";
 import SearchForm from "./components/SearchForm";
 import API from "./utils/API";
-
+import Heading from "./components/Heading";
 class App extends Component {
   state = {
     search: "",
@@ -24,11 +24,7 @@ class App extends Component {
   render() {
     return (
       <>
-        <h1 className="text-center">Employee Directory</h1>
-        <p className="text-center">
-          Click on controls to filter by heading or use the search box to narrow
-          your results.
-        </p>
+        <Heading />
         <SearchForm />
         <ContentHead />
       </>
