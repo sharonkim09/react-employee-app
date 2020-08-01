@@ -6,8 +6,11 @@ const EmployeeCard = (props) => {
         <div className="col-1">
           <img alt={props.name} src={props.image}/>
         </div>
-        <div className="col-2">
+        <div className="col-3">
             <p>{props.firstName} {props.lastName}</p>
+        </div>
+        <div className="col-3">
+            <p>{props.phoneNumber}</p>
         </div>
       </div>
     );

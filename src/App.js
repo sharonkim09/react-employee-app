@@ -34,7 +34,8 @@ class App extends Component {
           key={id}
           image={employee.picture.thumbnail} 
           firstName={employee.name.first}
-          lastName={employee.name.last}/>
+          lastName={employee.name.last}
+          phoneNumber={employee.phone}/>
         ))}
       </>
     );
