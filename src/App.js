@@ -30,7 +30,9 @@ class App extends Component {
         <SearchForm />
         <ContentHead />
         {this.state.employees.map((employee, id) => (
-          <EmployeeCard image={employee.picture.thumbnail} />
+          <EmployeeCard 
+          key={id}
+          image={employee.picture.thumbnail} />
         ))}
       </>
     );
