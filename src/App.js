@@ -3,13 +3,15 @@ import ContentHead from "./components/ContentHead";
 import SearchForm from "./components/SearchForm";
 import API from "./utils/API";
 import Heading from "./components/Heading";
+import EmployeeCard from "./components/EmployeeCard";
+
 class App extends Component {
   state = {
     search: "",
     employees: [],
   };
 
-  // When this component mounts, search the Giphy API for pictures of kittens
+  // When this component mounts, search the RandomUserGenerator API for pictures of kittens
   componentDidMount() {
     API.search()
       .then((res) => {
@@ -27,6 +29,9 @@ class App extends Component {
         <Heading />
         <SearchForm />
         <ContentHead />
+        {this.state.employees.map((employee, id) => (
+          <EmployeeCard image={employee.picture.thumbnail} />
+        ))}
       </>
     );
   }

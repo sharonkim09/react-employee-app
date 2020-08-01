@@ -3,7 +3,7 @@ import React from "react";
 const SearchResultContainer = (props) => {
   return (
     // table style later
-    <div class="row">
+    <div className="row">
       <div className="col-1">
         <h4>Image</h4>
       </div>
