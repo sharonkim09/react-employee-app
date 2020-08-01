@@ -32,7 +32,9 @@ class App extends Component {
         {this.state.employees.map((employee, id) => (
           <EmployeeCard 
           key={id}
-          image={employee.picture.thumbnail} />
+          image={employee.picture.thumbnail} 
+          firstName={employee.name.first}
+          lastName={employee.name.last}/>
         ))}
       </>
     );
