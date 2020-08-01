@@ -1,15 +1,16 @@
 import React from 'react';
 
-const SearchForm = (props) => {
+const SearchForm = ({handleInputChange}) => {
     return (
         <>
             <input 
             type="text"
             className="form-control"
             placeholder="Search"
-            // onChange=""
+            onChange={event=>handleInputChange(event)}
+            // value={props.value}
             />
-            
+    
         </>
     );
 };
