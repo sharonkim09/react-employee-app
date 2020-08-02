@@ -1,10 +1,10 @@
 import React, { Component } from "react";
-import ContentHead from "./components/ContentHead";
+import DataHead from "./components/DataHead";
 import SearchForm from "./components/SearchForm";
 import API from "./utils/API";
-import Heading from "./components/Heading";
+// import Heading from "./components/Heading/index";
 import EmployeeCard from "./components/EmployeeCard";
-
+import Home from "./components/pages/Home"
 class App extends Component {
   state = {
     search: "",
@@ -62,13 +62,13 @@ class App extends Component {
   render() {
     return (
       <>
-        <Heading />
+        <Home />
         <SearchForm
           value={this.state.search}
           handleInputChange={this.handleInputChange}
           sortName={this.sortName}
         />
-        <ContentHead />
+        <DataHead />
         {this.state.filteredEmployees.map((employee, id) => (
           <EmployeeCard
             key={id}
