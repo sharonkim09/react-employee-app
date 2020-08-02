@@ -10,7 +10,9 @@ const SearchForm = (props) => {
             onChange={props.handleInputChange}
             value={props.value}
             />
-    
+            <button className="btn btn-primary" type="button" onClick={props.sortName}>
+            Name Sort
+            </button>
         </>
     );
 };
