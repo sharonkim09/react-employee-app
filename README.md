@@ -25,6 +25,9 @@ This application gives user a random employees with their picture, name, phone n
 [Link to Demonstration of App](https://drive.google.com/file/d/1DjAMH5nTTofB2YZXwNDFZ3IeWWEZRw53/view)
 
 ## Credits
+
+ API used: Random User Generator https://randomuser.me/
+
  The instructions were provided to me by GT Full Stack Coding Program.
 
 ## License
