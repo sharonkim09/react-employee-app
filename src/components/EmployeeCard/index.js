@@ -1,13 +1,13 @@
 import React from "react";
 import Moment from 'react-moment';
-// import style from "./style.css"
+import "./style.css"
 // rendering data for employees
 const EmployeeCard = (props) => {
   return (
-    <div className="container">
+    <div className="container mb-2">
       <div className="row">
         <div className="col-1">
-          <img alt={props.name} src={props.image} />
+          <img className="rounded-circle"alt={props.name} src={props.image} />
         </div>
         <div className="col-3">
           <p>
@@ -25,6 +25,7 @@ const EmployeeCard = (props) => {
         </div>
       </div>
     </div>
+    
   );
 };
 
