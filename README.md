@@ -20,7 +20,8 @@ This application gives user a random employees with their picture, name, phone n
 
 [Link to Deployed Website](https://sharonkim09.github.io/react-employee-app/)
 
-![Screenshot of Workout Tracker]()
+[Link to Demonstration of App](https://drive.google.com/file/d/1DjAMH5nTTofB2YZXwNDFZ3IeWWEZRw53/view)
+![Screenshot of Workout Tracker](./public/app-screenshot.png)
 
 ## Credits
  The instructions were provided to me by GT Full Stack Coding Program.
