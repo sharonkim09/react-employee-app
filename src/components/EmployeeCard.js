@@ -1,5 +1,5 @@
 import React from "react";
-
+import Moment from 'react-moment';
 const EmployeeCard = (props) => {
   return (
     <div className="container">
@@ -19,7 +19,7 @@ const EmployeeCard = (props) => {
           <p>{props.email}</p>
         </div>
         <div className="col-2">
-          <p>{props.dob}</p>
+          <Moment format="MM/DD/YYYY">{props.dob}</Moment>
         </div>
       </div>
     </div>
