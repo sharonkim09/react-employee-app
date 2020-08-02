@@ -16,12 +16,13 @@ This application gives user a random employees with their picture, name, phone n
 3. Run npm start or npm run start in terminal 
 
 ## Usage
+![Demonstration of App](./public/employee-directory.gif)
+
 [Link to GH Repo](https://github.com/sharonkim09/react-employee-app)
 
 [Link to Deployed Website](https://sharonkim09.github.io/react-employee-app/)
 
 [Link to Demonstration of App](https://drive.google.com/file/d/1DjAMH5nTTofB2YZXwNDFZ3IeWWEZRw53/view)
-![Screenshot of Workout Tracker](./public/app-screenshot.png)
 
 ## Credits
  The instructions were provided to me by GT Full Stack Coding Program.
