@@ -1,5 +1,7 @@
 import React from "react";
 import Moment from 'react-moment';
+// import style from "./style.css"
+// rendering data for employees
 const EmployeeCard = (props) => {
   return (
     <div className="container">

@@ -1,8 +1,7 @@
 import React from "react";
-
+// rendering col headings
 const SearchResultContainer = (props) => {
   return (
-    // table style later
     <div className="container">
       <div className="row">
         <div className="col-1">

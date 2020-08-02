@@ -1,5 +1,5 @@
 import React from "react";
-
+// rendering heading
 const Heading = () => {
   return (
     <div className="jumbotron">
