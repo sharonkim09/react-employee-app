@@ -1,53 +1,55 @@
-# Unit 19 React Homework: Employee Directory
+# React: Employee Directory
 
-## Overview
+## Description
+This application gives user a random employees with their picture, name, phone number,email, and their date of birth. User can sort the table by at least one category and filter the users by at least one property. This application uses Random User Generator API.
 
-For this assignment, you'll create a employee directory with React. This assignment will require you to break up your application's UI into components, manage component state, and respond to user events.
+## Table of Contents
+* [Installation](#installation)
+* [Usage](#usage)
+* [Credits](#credits)
+* [License](#license)
+* [Contributing](#contributing)
 
-## User Story
+## Installation
+1. Clone the repo
+2. Install the packages/dependancies for this app
+3. Run npm start or npm run start in terminal 
 
-* As a user, I want to be able to view my entire employee directory at once so that I have quick access to their information.
+## Usage
+[Link to GH Repo](https://github.com/sharonkim09/react-employee-app)
 
-## Business Context
+[Link to Deployed Website](https://sharonkim09.github.io/react-employee-app/)
 
-An employee or manager would benefit greatly from being able to view non-sensitive data about other employees. It would be particularly helpful to be able to filter employees by name.
+![Screenshot of Workout Tracker]()
 
-## Acceptance Criteria
+## Credits
+ The instructions were provided to me by GT Full Stack Coding Program.
 
-Given a table of random users, when the user loads the page, a table of employees should render. 
+## License
+MIT License
 
-The user should be able to:
+Copyright (c) [2020] [Sharon Kim]
 
-  * Sort the table by at least one category
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-  * Filter the users by at least one property.
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
 
-## Commit Early and Often
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
-One of the most important skills to master as a web developer is version control. Building the habit of committing via Git is important for two reasons:
+---
 
-1. Your commit history is a signal to employers that you are actively working on projects and learning new skills
+## Contributing
 
-2. Your commit history allows you to revert your code base in the event that you need to return to a previous state
-
-Follow these guidelines for committing:
-
-* Make single purpose commits for related changes to ensure a clean, manageable history. If you are fixing two issues, make two commits
-
-* Write descriptive, meaningful commit messages so that you and anyone else looking at your repository can easily understand its history
-
-* Don't commit half done work, for the sake of your collaborators (and your future self!)
-
-* Test your application before you commit to ensure functionality at every step in the development process
-
-We would like you to have well over 200 commits by graduation, so commit early and often!
-
-
-## Submission on BCS
-
-You are required to submit the following:
-
-* the URL to the deployed application
-
-* the URL to the Github repository
-
+We are not currently accepting contributors at the moment.
