@@ -69,6 +69,7 @@ class App extends Component {
           handleInputChange={this.handleInputChange}
           sortName={this.sortName}
         />
+        <table>
         <DataHead />
         {this.state.filteredEmployees.map((employee, id) => (
           <EmployeeCard
@@ -81,6 +82,7 @@ class App extends Component {
             dob={employee.dob.date}
           />
         ))}
+        </table>
       </>
     );
   }

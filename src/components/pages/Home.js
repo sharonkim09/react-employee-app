@@ -6,7 +6,7 @@ const Heading = () => {
     <div className="jumbotron">
       <h1 className="text-center">Employee Directory</h1>
       <p className=" lead text-center">
-        Click on button to filter by name or use the search box to narrow
+        Click on button to alphabetize names or use the search box to narrow
         your results.
       </p>
     </div>

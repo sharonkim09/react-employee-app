@@ -1,4 +1,9 @@
-*{
-    font-family: 'Chilanka', cursive;
-font-family: 'Quattrocento Sans', sans-serif;
+* {
+  font-family: "Chilanka", cursive;
+  font-family: "Quattrocento Sans", sans-serif;
+}
+
+table{
+    width:100%;
+    margin:0 auto;
 }

@@ -1,31 +1,22 @@
 import React from "react";
-import Moment from 'react-moment';
-import "./style.css"
+import Moment from "react-moment";
+import "./style.css";
 // rendering data for employees
 const EmployeeCard = (props) => {
   return (
-    <div className="container mb-2">
-      <div className="row">
-        <div className="col-1">
-          <img className="rounded-circle"alt={props.name} src={props.image} />
-        </div>
-        <div className="col-3">
-          <p>
-            {props.firstName} {props.lastName}
-          </p>
-        </div>
-        <div className="col-3">
-          <p>{props.phoneNumber}</p>
-        </div>
-        <div className="col-3">
-          <p>{props.email}</p>
-        </div>
-        <div className="col-2">
-          <Moment format="MM/DD/YYYY">{props.dob}</Moment>
-        </div>
-      </div>
-    </div>
-    
+    <tr>
+      <td>
+        <img className="rounded-circle" alt={props.name} src={props.image} />
+      </td>
+      <td>
+        {props.firstName} {props.lastName}
+      </td>
+      <td>{props.phoneNumber}</td>
+      <td>{props.email}</td>
+      <td>
+        <Moment format="MM/DD/YYYY">{props.dob}</Moment>
+      </td>
+    </tr>
   );
 };
 

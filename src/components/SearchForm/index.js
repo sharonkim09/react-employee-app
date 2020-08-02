@@ -2,11 +2,12 @@ import React from "react";
 import "./style.css"
 const SearchForm = (props) => {
   return (
+    <div id="formArea">
     <div className="form-group text-center">
       <input
         type="text"
         className="form text-center"
-        placeholder="Search"
+        placeholder="Search Employee"
         onChange={props.handleInputChange}
         value={props.value}
       />
@@ -18,6 +19,7 @@ const SearchForm = (props) => {
       >
         Sort Name
       </button>
+    </div>
     </div>
   );
 };
