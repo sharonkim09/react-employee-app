@@ -1,5 +1,6 @@
 import React from "react";
 import "./style.css"
+// rendering form with input and button
 const SearchForm = (props) => {
   return (
     <div id="formArea">
