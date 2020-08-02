@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import DataHead from "./components/DataHead";
 import SearchForm from "./components/SearchForm";
 import API from "./utils/API";
+import "./App.css"
 // import Heading from "./components/Heading/index";
 import EmployeeCard from "./components/EmployeeCard";
 import Home from "./components/pages/Home"
@@ -68,11 +69,12 @@ class App extends Component {
           handleInputChange={this.handleInputChange}
           sortName={this.sortName}
         />
+        <table>
         <DataHead />
         {this.state.filteredEmployees.map((employee, id) => (
           <EmployeeCard
             key={id}
-            image={employee.picture.thumbnail}
+            image={employee.picture.medium}
             firstName={employee.name.first}
             lastName={employee.name.last}
             phoneNumber={employee.phone}
@@ -80,6 +82,7 @@ class App extends Component {
             dob={employee.dob.date}
           />
         ))}
+        </table>
       </>
     );
   }
