@@ -9,7 +9,7 @@ class App extends Component {
   state = {
     search: "",
     employees: [],
-    result:[]
+    filteredEmployees:[]
   };
 
   // When this component mounts, search the RandomUserGenerator API for pictures of kittens
@@ -17,7 +17,9 @@ class App extends Component {
     API.search()
       .then((res) => {
         console.log(res);
-        this.setState({ employees: res.data.results });
+        this.setState({ employees: res.data.results,
+        filteredEmployees:res.data.results
+        });
       })
       .catch((err) => {
         console.log(err);
@@ -25,10 +27,18 @@ class App extends Component {
   }
 
   handleInputChange = event => {
-this.setState({
-  search:event.target.value
-})
-  }
+    event.preventDefault();
+    this.setState({ search: event.target.value })
+    console.log(event.target.value);
+    const filter = event.target.value;
+    const filteredList = this.state.employees.filter(employee => {
+        // merge data together, then see if user input is anywhere inside
+        const { first: firstName, last: lastName } = employee.name;
+        const name = `${firstName} ${lastName}`;
+        return name.toLowerCase().includes(filter.toLowerCase().trim());
+    });
+    this.setState({ filteredEmployees: filteredList });
+}
 
   render() {
     return (
@@ -39,7 +49,7 @@ this.setState({
        handleInputChange={this.handleInputChange}
        />
         <ContentHead />
-        {this.state.employees.map((employee, id) => (
+        {this.state.filteredEmployees.map((employee, id) => (
           <EmployeeCard 
           key={id}
           image={employee.picture.thumbnail} 
