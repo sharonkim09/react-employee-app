@@ -2,10 +2,10 @@ import React, { Component } from "react";
 import DataHead from "./components/DataHead";
 import SearchForm from "./components/SearchForm";
 import API from "./utils/API";
-import "./App.css"
+import "./App.css";
 // import Heading from "./components/Heading/index";
 import EmployeeCard from "./components/EmployeeCard";
-import Home from "./components/pages/Home"
+import Home from "./components/pages/Home";
 class App extends Component {
   state = {
     search: "",
@@ -28,7 +28,7 @@ class App extends Component {
         console.log(err);
       });
   }
-// function to handle the change in input and looks for employees with what is in the input
+  // function to handle the change in input and looks for employees with what is in the input
   handleInputChange = (event) => {
     event.preventDefault();
     this.setState({ search: event.target.value });
@@ -42,17 +42,17 @@ class App extends Component {
     });
     this.setState({ filteredEmployees: filteredList });
   };
-// function to alphabetize first names of employees
+  // function to alphabetize first names of employees
   sortName = () => {
     let currentEmployees = this.state.employees;
-    if (this.state.sortedName=== true) {
-      currentEmployees.sort((a, b)=> {
-        if (a.name.first.toLowerCase()< b.name.first.toLowerCase()) return -1;
+    if (this.state.sortedName === true) {
+      currentEmployees.sort((a, b) => {
+        if (a.name.first.toLowerCase() < b.name.first.toLowerCase()) return -1;
         return 0;
       });
       this.setState({ employees: currentEmployees, sortedName: false });
     } else {
-      currentEmployees.sort((a, b) =>{
+      currentEmployees.sort((a, b) => {
         if (a.name.first.toLowerCase() > b.name.first.toLowerCase()) return -1;
         return 0;
       });
@@ -69,20 +69,22 @@ class App extends Component {
           handleInputChange={this.handleInputChange}
           sortName={this.sortName}
         />
-        <table>
-        <DataHead />
-        {this.state.filteredEmployees.map((employee, id) => (
-          <EmployeeCard
-            key={id}
-            image={employee.picture.medium}
-            firstName={employee.name.first}
-            lastName={employee.name.last}
-            phoneNumber={employee.phone}
-            email={employee.email}
-            dob={employee.dob.date}
-          />
-        ))}
-        </table>
+        <div className="container">
+          <table>
+            <DataHead />
+            {this.state.filteredEmployees.map((employee, id) => (
+              <EmployeeCard
+                key={id}
+                image={employee.picture.medium}
+                firstName={employee.name.first}
+                lastName={employee.name.last}
+                phoneNumber={employee.phone}
+                email={employee.email}
+                dob={employee.dob.date}
+              />
+            ))}
+          </table>
+        </div>
       </>
     );
   }
