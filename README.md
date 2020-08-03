@@ -26,7 +26,7 @@ This application gives user a random employees with their picture, name, phone n
 
 [Link to Deployed Website](https://sharonkim09.github.io/react-employee-app/)
 
-[Link to Demonstration of App](https://drive.google.com/file/d/1DjAMH5nTTofB2YZXwNDFZ3IeWWEZRw53/view)
+[Link to Demonstration of App](https://drive.google.com/file/d/1_xqpUrMa3Z1PL9taW6Pt_GJRHM6tTDBw/view)
 
 ## Credits
 
