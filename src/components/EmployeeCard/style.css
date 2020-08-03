@@ -10,6 +10,7 @@ tr:nth-child(even) {
   background-color: #79a0db;
   color: white;
 }
-tr:nth-child(odd) ,th {
+tr:nth-child(odd),
+th {
   background-color: #ccced1;
 }

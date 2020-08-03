@@ -5,7 +5,7 @@ const SearchResultContainer = (props) => {
   return (
     <thead id="tableSize">
       <th id="moveImage">Image</th>
-      <th>Name</th>
+      <th onClick={props.sortName}>Name </th>
       <th>Phone</th>
       <th>Email</th>
       <th>DOB</th>

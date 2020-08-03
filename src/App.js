@@ -67,11 +67,10 @@ class App extends Component {
         <SearchForm
           value={this.state.search}
           handleInputChange={this.handleInputChange}
-          sortName={this.sortName}
         />
         <div className="container">
           <table>
-            <DataHead />
+            <DataHead sortName={this.sortName} />
             {this.state.filteredEmployees.map((employee, id) => (
               <EmployeeCard
                 key={id}

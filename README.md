@@ -1,21 +1,25 @@
 # React: Employee Directory
 
 ## Description
+
 This application gives user a random employees with their picture, name, phone number,email, and their date of birth. User can sort the table by at least one category and filter the users by at least one property. This application uses Random User Generator API.
 
 ## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [Credits](#credits)
-* [License](#license)
-* [Contributing](#contributing)
+
+- [Installation](#installation)
+- [Usage](#usage)
+- [Credits](#credits)
+- [License](#license)
+- [Contributing](#contributing)
 
 ## Installation
+
 1. Clone the repo
 2. Install the packages/dependancies for this app
-3. Run npm start or npm run start in terminal 
+3. Run npm start or npm run start in terminal
 
 ## Usage
+
 ![Demonstration of App](./public/employee-directory.gif)
 
 [Link to GH Repo](https://github.com/sharonkim09/react-employee-app)
@@ -26,14 +30,15 @@ This application gives user a random employees with their picture, name, phone n
 
 ## Credits
 
- API used: Random User Generator https://randomuser.me/
+API used: Random User Generator https://randomuser.me/
 
- The instructions were provided to me by GT Full Stack Coding Program.
+The instructions were provided to me by GT Full Stack Coding Program.
 
 ## License
+
 MIT License
 
-Copyright (c) [2020] [Sharon Kim]
+Copyright (c) [2020][sharon kim]
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
